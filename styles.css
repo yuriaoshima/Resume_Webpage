@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  background-color: rgba(221, 241, 255, 0.8);
 }
 
 body {
@@ -8,26 +9,187 @@ body {
   height: 100%;
   margin: auto;
   font-family: 'Raleway', sans-serif;
+  background-color: white;
 }
 
-aside {
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+header {
+  padding: 1rem 2rem;
+}
+
+#info {
+  font-size: 110%;
+  line-height: 2rem;
+  padding-top: 2rem;
+  color: cadetblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#info a:hover {
+  text-decoration: underline;
+  color: rgb(47, 90, 112);
+}
+
+#heading {
+  width: 50%;
   float: left;
-  width: 25%;
-  background-color: rgb(204, 245, 255);
-  padding: 0 1rem;
-  height: 100%;
+  padding-left: 2rem;
+}
+
+#heading h3 {
+  font-style: italic;
+  letter-spacing: 0.1rem;
 }
 
 article {
-  float: right;
-  width: 67%;
-  padding: 0 1rem 0 2rem;
+  clear: both;
+  padding: 0 2rem 2rem 2rem;
+  background-color: white;
 }
 
 h1 {
-  font-size: 200%;
-  text-align: center;
+  font-size: 220%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: rgb(57, 99, 127);
 }
- aside h3 {
-   text-align: center;
+
+#img-container {
+  width: 13%;
+  float: left;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+article h2 {
+  color: rgb(57, 99, 127);
+  padding-top: 1.5rem;
+}
+
+nav {
+  padding: 1rem;
+  background-color: cadetblue;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+nav a {
+  color: white;
+  font-size: 110%;
+}
+
+span {
+  font-style: italic;
+  font-weight: normal;
+}
+
+h3 {
+  letter-spacing: 0.1rem;
+  color: cadetblue;
+}
+
+#experience p {
+  font-style: italic;
+}
+
+.edu {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+i {
+  padding-right: 0.5rem;
+}
+
+.skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 0.8rem;
+	width: 100%;
+	background: #eee;
+	height: 2.2rem;
+	border-radius: 0.16rem;
+	-moz-border-radius: 0.16rem;
+	-webkit-border-radius: 0.16rem;
+	-webkit-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
+	-ms-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	transition: 0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	transition-property: width, background-color;
+}
+
+.skillbar-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 15%;
+	font-weight: bold;
+	font-size: 90%;
+	color: white;
+	background: rgba(47, 90, 112, 0.75);
+	-webkit-border-top-left-radius: 0.16rem;
+	-webkit-border-bottom-left-radius: 0.2rem;
+	-moz-border-radius-topleft: 0.16rem;
+	-moz-border-radius-bottomleft: 0.16rem;
+	border-top-left-radius: 0.16rem;
+	border-bottom-left-radius: 0.16rem;
+}
+
+.skillbar-title span {
+	display: block;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 0 0.6rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	-webkit-border-top-left-radius: 0.16rem;
+	-webkit-border-bottom-left-radius: 0.16rem;
+	-moz-border-radius-topleft: 0.16rem;
+	-moz-border-radius-bottomleft: 0.16rem;
+	border-top-left-radius: 0.16rem;
+	border-bottom-left-radius: 0.16rem;
+}
+
+.skillbar-bar {
+	height: 2.2rem;
+	width:0;
+	background: rgb(184, 231, 255);
+	border-radius: 0.16rem;
+	-moz-border-radius: 0.16rem;
+	-webkit-border-radius: 0.16rem;
+}
+
+.skill-bar-percent {
+	position: absolute;
+	right: 0.5rem;
+	top: 0;
+	font-size: 80%;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	color: white;
+	color: rgba(0, 0, 0, 0.4);
 }

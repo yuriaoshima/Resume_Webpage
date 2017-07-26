@@ -3,30 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Yuri Aoshima Resume</title>
+    <script src="https://use.fontawesome.com/9e27f50243.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <p>put links here</p>
-      </nav>
+    <header class="clearfix">
+      <div id="img-container">
+        <img src="images/profile_pic.jpg">
+      </div>
+      <div id="heading">
+        <h1>Yuri Aoshima</h1>
+        <h3>Software engineer with a passion for learning</h3>
+      </div>
+      <ul class="fa-ul" id="info">
+        <li><i class="fa fa-envelope" aria-hidden="true"></i>teiyuri.aoshima@gmail.com</li>
+        <li><i class="fa fa-phone" aria-hidden="true"></i>(702) 557-0027</li>
+        <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/teiyuri/">https://www.linkedin.com/in/teiyuri</a></li>
+        <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/yuriaoshima">https://github.com/yuriaoshima</a></li>
+      </ul>
     </header>
     
-    <aside>
-      <h1>Yuri Aoshima</h1>
-      <h3>Software engineer with a passion for learning</h3>
+    <nav>
       <ul>
-        <li>teiyuri.aoshima@gmail.com</li>
-        <li>(702) 557-0027</li>
-        <li>https://www.linkedin.com/in/teiyuri/</li>
-        <li>https://github.com/yuriaoshima</li>
+        <a href="#">About Me</a>
+        <a href="#">Education</a>
+        <a href="#">Skills</a>
+        <a href="#">Experience</a>
+        <a href="#">Projects</a>
       </ul>
-    </aside>
+    </nav>
     
     <article>
       <section>
-        <h2>About me</h2>
+        <h2>About Me</h2>
 		<p>Hello! My name is Yuri Aoshima. I am an aspiring front-end and eventually full-stack web developer looking to transition out of the aerospace industry.</p>
 		<p>I graduated with a degree in electrical engineering with a focus in embedded systems/computer architecture. During my college career I discovered a passion for programming and the amazing ways that lines of code can work together to create applications that people can interact with. After graduation, I pursued a certificate in HTML5/CSS3/Responsive Web Development so I could further my interests and also create my own web applications.</p>
 		<p>At my current job with The Boeing Company, I work on a wide array of projects spanning from FPGA design to researching IoT and networking applications. However, I am looking to focus more on front-end web development, something I really enjoy, and am searching for a work culture where I am always challenged, always learning and always being pushed beyond my limits.</p> 
@@ -34,17 +44,53 @@
       
       <section>
         <h2>Education</h2>
-		<p>University of Washington, 2011-2016<br>
+		<p class="edu">University of Washington, 2011-2016<br>
 		<span>B.S. Electrical Engineering, Embedded Systems</span></p>
-		<p>University of Washington, 2016-2017<br>
+		<p class="edu">University of Washington, 2016-2017<br>
 		<span>Certificate in HTML5, CSS3, and Responsive Web Design</span></p>
       </section>
       
       <section>
         <h2>Skills</h2>
+        <div class="skillbar clearfix" data-percent="95%">
+          <div class="skillbar-title"><span>HTML5, CSS3</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">95%</div>
+        </div>
+        <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar-title"><span>Javascript, JQuery</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div>
+          <div class="skillbar clearfix" data-percent="75%">
+          <div class="skillbar-title"><span>Github</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">75%</div>
+        </div>
+        <div class="skillbar clearfix" data-percent="50%">
+          <div class="skillbar-title"><span>Java, C, C++</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">50%</div>
+        </div>
+        <div class="skillbar clearfix" data-percent="20%">
+          <div class="skillbar-title"><span>Ruby, Rails</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">20%</div>
+        </div>
+        <div class="skillbar clearfix" data-percent="20%">
+          <div class="skillbar-title"><span>Python</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">20%</div>
+        </div>
+        <div class="skillbar clearfix" data-percent="70%">
+          <div class="skillbar-title"><span>Verilog</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">70%</div>
+        </div>
+        
       </section>
       
-      <section>
+      <section id="experience">
         <h2>Experience</h2>
         <section>
 		  <h3>The Boeing Company, Engineering Career Foundation Program, Rotation 3</h3>
@@ -105,6 +151,9 @@
         <p>Here are some of my projects!</p>
       </section>
     </article>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
 				
