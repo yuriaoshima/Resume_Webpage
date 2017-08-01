@@ -2,9 +2,8 @@ $(document).ready(function(){
   $('.skillbar').each(function(){
     $(this).find('.skillbar-bar').animate({
       width:$(this).attr('data-percent')
-	},6000);
+	},5000);
   });
-  //above 6000 might be too long
   
   //code for smooth scrolling when user clicks local links on navbar
   $("nav a").on("click", function(event) {
