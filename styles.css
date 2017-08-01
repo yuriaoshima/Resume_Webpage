@@ -3,6 +3,7 @@ html {
   background-color: rgba(221, 241, 255, 0.8);
 }
 
+/*set for the white background with colored margins look*/
 body {
   font-size: 100%; 
   width: 80%;
@@ -12,6 +13,7 @@ body {
   background-color: white;
 }
 
+/*prevents items in the header from collapsing since all children are floated*/
 .clearfix:after{
     content:"";
     display:block;
@@ -22,6 +24,7 @@ header {
   padding: 1rem 2rem;
 }
 
+/*info refers to the links and phone/email in the header*/
 #info {
   font-size: 110%;
   line-height: 2rem;
@@ -32,11 +35,13 @@ header {
   justify-content: flex-start;
 }
 
+/*when hovering over links in the header change color and underline*/
 #info a:hover {
   text-decoration: underline;
   color: rgb(47, 90, 112);
 }
 
+/* #heading refers to name and subtitle in header*/
 #heading {
   width: 50%;
   float: left;
@@ -48,6 +53,7 @@ header {
   letter-spacing: 0.1rem;
 }
 
+/*includes all the main sections of the resume under the header*/
 article {
   clear: both;
   padding: 0 2rem 2rem 2rem;
@@ -61,6 +67,7 @@ h1 {
   color: rgb(57, 99, 127);
 }
 
+/*responsive design to contain image so image is 100% the width of container*/
 #img-container {
   width: 13%;
   float: left;
@@ -76,6 +83,12 @@ a {
   color: cadetblue;
 }
 
+/*overrides the color assignment for general links*/
+nav a {
+  color: white;
+  font-size: 110%;
+}
+
 article h2 {
   color: rgb(57, 99, 127);
   padding-top: 1.5rem;
@@ -86,6 +99,7 @@ nav {
   background-color: cadetblue;
 }
 
+/*makes list items in the nav behave like items in a flexbox so I can space them equally and easily*/
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -93,11 +107,7 @@ nav ul {
   padding: 0 1rem;
 }
 
-nav a {
-  color: white;
-  font-size: 110%;
-}
-
+/*takes care of italacizing the degrees in edu*/
 span {
   font-style: italic;
   font-weight: normal;
@@ -108,19 +118,27 @@ h3 {
   color: cadetblue;
 }
 
+/*italicized the position subtitle in experience section*/
 #experience p {
   font-style: italic;
 }
 
+/*bolds the university name in edu section*/
 .edu {
   font-weight: bold;
   line-height: 1.5rem;
 }
 
+#projects ul {
+  padding-top: 0rem;
+}
+
+/*creates space between the font awesome icon the words to the right of it*/
 i {
   padding-right: 0.5rem;
 }
 
+/*styles for the animated skills bar*/
 .skillbar {
 	position: relative;
 	display: block;
@@ -192,4 +210,158 @@ i {
 	line-height: 2.2rem;
 	color: white;
 	color: rgba(0, 0, 0, 0.4);
+}
+
+/*start of media queries*/
+@media (max-width: 1300px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1150px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1060px) {
+  /*#heading {
+    padding-left: 0;
+    width: 45%;
+  }*/
+  
+  h1 {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  
+  /*#info {
+    display: block;
+    width: 50%;
+    float: right;
+  }*/
+  
+  #projects ul {
+    float: left;
+  }
+  
+  html {
+    background-color: white;
+  }
+  
+  #info {
+    float: right;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    font-size: 90%;
+    display: block;
+    line-height: 1.5rem;
+  }
+  
+  #heading {
+    float: right;
+    width: 80%;
+    padding: 0;
+  }
+}
+
+@media(max-width: 840px) {  
+  h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 90%;
+  }
+  
+  #heading h3 {
+    font-size: 90%;
+    padding-bottom: 1rem;
+  }
+  
+  nav ul {
+    font-size: 80%;
+    padding: 0;
+  }
+  
+  nav {
+    padding: 1rem 2rem;
+  }
+  
+  .skillbar-title {
+    width: 25%;
+  }
+  
+  #experience p {
+    font-size: 85%;
+  }
+  
+  #experience ul {
+    font-size: 95%;
+    padding-left: 1.5rem;
+  }
+  
+  #projects ul {
+    margin-left: 1rem;
+  }
+}
+
+@media(max-width: 800px) {
+  img {
+    display: none;
+  }
+  
+  #heading {
+    clear: both;
+    width: 100%;
+  }
+  
+  #info {
+    clear: both;
+    width: 100%;
+  }
+}
+  
+@media(max-width: 455px) {
+  nav {
+    padding: 1rem 0.5rem;
+  }
+  
+  header {
+    padding-left: 0.5rem;
+    padding-right: 0;
+  }
+  
+  article {
+    padding-left: 0.5rem
+  }
+  
+  .skillbar-title {
+    font-size: 75%;
+    width: 30%;
+  }
+}
+
+@media(max-width: 325px) {
+  nav {
+    font-size: 80%;
+    padding: 0.5rem 0.2rem;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 105%;
+  }
+  
+  .skillbar-title {
+    font-size: 68%;
+    width: 43%;
+  }
+  
+  article {
+    font-size: 90%;
+  }
 }
