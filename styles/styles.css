@@ -21,14 +21,16 @@ body {
 }
 
 header {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 0rem;
 }
 
 /*info refers to the links and phone/email in the header*/
 #info {
+  width: 35%;
   font-size: 110%;
   line-height: 2rem;
   padding-top: 2rem;
+  padding-left: 6rem;
   color: cadetblue;
   display: flex;
   flex-wrap: wrap;
@@ -61,22 +63,22 @@ article {
 }
 
 h1 {
-  font-size: 220%;
+  font-size: 300%;
   padding-top: 2rem;
   padding-bottom: 1rem;
   color: rgb(57, 99, 127);
 }
 
 /*responsive design to contain image so image is 100% the width of container*/
-#img-container {
+/*#img-container {
   width: 13%;
   float: left;
-}
+}*/
 
-img {
+/*img {
   max-width: 100%;
   border-radius: 50%;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -129,9 +131,9 @@ h3 {
   line-height: 1.5rem;
 }
 
-#projects ul {
+/*#projects ul {
   padding-top: 0rem;
-}
+}*/
 
 /*creates space between the font awesome icon the words to the right of it*/
 i {
@@ -165,7 +167,7 @@ i {
 	position: absolute;
 	top: 0;
 	left: 0;
-    width: 15%;
+    width: 12%;
 	font-weight: bold;
 	font-size: 90%;
 	color: white;
@@ -251,9 +253,9 @@ i {
   }
   
   #info {
-    float: right;
+    float: left;
     width: 80%;
-    padding: 0;
+    padding-left: 2rem;
     margin: 0;
     font-size: 90%;
     display: block;
@@ -261,9 +263,9 @@ i {
   }
   
   #heading {
-    float: right;
+    float: left;
     width: 80%;
-    padding: 0;
+    padding-left: 2rem;
   }
 }
 
@@ -292,11 +294,11 @@ i {
   }
   
   .skillbar-title {
-    width: 25%;
+    width: 5.5rem;
   }
   
   #experience p {
-    font-size: 85%;
+    font-size: 80%;
   }
   
   #experience ul {
@@ -310,9 +312,9 @@ i {
 }
 
 @media(max-width: 800px) {
-  img {
+  /*img {
     display: none;
-  }
+  }*/
   
   #heading {
     clear: both;
@@ -323,6 +325,10 @@ i {
     clear: both;
     width: 100%;
   }
+  
+  .skillbar-title {
+    width: 5.5rem;
+  }
 }
   
 @media(max-width: 455px) {
@@ -330,9 +336,12 @@ i {
     padding: 1rem 0.5rem;
   }
   
-  header {
-    padding-left: 0.5rem;
-    padding-right: 0;
+  h1 {
+    font-size: 200%;
+  }
+  
+  #heading, #info {
+    padding-left: 1rem;
   }
   
   article {
@@ -340,8 +349,12 @@ i {
   }
   
   .skillbar-title {
-    font-size: 75%;
-    width: 30%;
+    font-size: 70%;
+    width: 4.2rem;
+  }
+  
+  .skillbar-title span {
+    padding-left: 0.5rem;
   }
 }
 
@@ -349,6 +362,9 @@ i {
   nav {
     font-size: 80%;
     padding: 0.5rem 0.2rem;
+  }
+  h1 {
+    font-size: 150%;
   }
   
   h2 {
@@ -358,7 +374,7 @@ i {
   
   .skillbar-title {
     font-size: 68%;
-    width: 43%;
+    width: 4rem;
   }
   
   article {
